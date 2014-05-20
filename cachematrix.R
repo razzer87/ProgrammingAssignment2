@@ -35,10 +35,10 @@ makeCacheMatrix <- function(x = matrix()) {
         ## get will return the matrix stored in the object
         get <- function() x
         
-        ## setInverse contains the function to find the inverse of a matrix
+        ## setinverse contains the function to find the inverse of a matrix
         setinverse <- function(solve) m <<- solve
         
-        ## getInverse will return what m has been set to.
+        ## getinverse will return what m has been set to.
         ## m is NULL as per line 21. Running cacheSolve sets this element to a value.
         ## If the matrix is changed using the set element, it reverts back to NULL.
         getinverse <- function() m
